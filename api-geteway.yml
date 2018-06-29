@@ -4,14 +4,21 @@ eureka:
       defaultZone: http://192.168.0.115:8761/eureka/,http://192.168.0.115:8762/eureka/
 env: dev
 spring:
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    password: root
-    url: jdbc:mysql://192.168.0.115:3306/sell_test
-    username: root
   rabbitmq:
     host: 192.168.0.171
     port: 5672
     username: root
     password: 123456
-    
+zuul:
+  routes:
+    client:
+      path: /myclient/**
+      serviceId: client
+      #敏感头，cookie传递值
+      sensitiveHeaders:
+      #排除那些接口，不暴露外网，只允许内网访问
+  ignored-patterns:
+    - /**/client/listForOder
+management:
+  security:
+    enabled: false

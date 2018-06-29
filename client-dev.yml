@@ -9,9 +9,6 @@ spring:
     password: root
     url: jdbc:mysql://192.168.0.115:3306/sell_test
     username: root
-  jpa:
-    show-sql: true
-    
   rabbitmq:
     host: 192.168.0.171
     port: 5672
@@ -20,4 +17,4 @@ spring:
     
 gril:
   name: benko
-  age: 172
+  age: 173

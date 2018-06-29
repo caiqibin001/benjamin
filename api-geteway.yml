@@ -1,0 +1,17 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.0.115:8761/eureka/,http://192.168.0.115:8762/eureka/
+env: dev
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: root
+    url: jdbc:mysql://192.168.0.115:3306/sell_test
+    username: root
+  rabbitmq:
+    host: 192.168.0.171
+    port: 5672
+    username: root
+    password: 123456
+    

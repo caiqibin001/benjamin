@@ -11,8 +11,13 @@ spring:
     username: root
   jpa:
     show-sql: true
-aaa: aaa123
-
+    
+  rabbitmq:
+    host: 192.168.0.171
+    port: 5672
+    username: root
+    password: 123456
+    
 gril:
-  name: benko3
-  age: 189
+  name: benko
+  age: 170

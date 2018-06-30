@@ -15,7 +15,7 @@ spring:
     username: root
     password: 123456
 
-password: {cipher}68091c2cc2fc63c6f6ce742c2fa7163af787d7e89764954d673aedfa06fc229f
+password: '{cipher}68091c2cc2fc63c6f6ce742c2fa7163af787d7e89764954d673aedfa06fc229f'
 
 gril:
   name: benko

@@ -17,8 +17,8 @@ zuul:
       #敏感头，cookie传递值
       sensitiveHeaders:
       #排除那些接口，不暴露外网，只允许内网访问
-  ignored-patterns:
-    - /**/client/listForOder
+  #ignored-patterns:
+  #  - /**/client/listForOder
 management:
   security:
     enabled: false

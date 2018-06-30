@@ -14,7 +14,9 @@ spring:
     port: 5672
     username: root
     password: 123456
-    
+
+password: 68091c2cc2fc63c6f6ce742c2fa7163af787d7e89764954d673aedfa06fc229f
+
 gril:
   name: benko
   age: 179
